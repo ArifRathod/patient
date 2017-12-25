@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node server.js"
+  },
   "name": "RestApi",
   "version": "1.0.0",
   "description": "RestApi",
