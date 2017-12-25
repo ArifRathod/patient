@@ -7,7 +7,7 @@
         "workerCount": 2
     },
     "server": {
-        "port": 5002,
+        "port": 3000,
         "bodyParser": {
             "limit": "5000kb"
         }
