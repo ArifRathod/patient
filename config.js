@@ -4,7 +4,7 @@ var config = convict({
     env: {
         doc: 'The applicaton environment.',
         format: ['live', 'local', 'dev'],
-        default: 'dev',
+        default: 'live',
         env: 'NODE_ENV',
         arg: 'env'
     },
