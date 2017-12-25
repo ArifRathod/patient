@@ -1,0 +1,24 @@
+{
+    "logger": {
+        "httpLogFormat": ":req['x-forwarded-for'] - :remote-user [:date] \":method :url HTTP/:http-version\" :status :res[content-length] :response-time ms \":referrer\" \":user-agent\"",
+        "path": "/"
+    },
+    "cluster": {
+        "workerCount": 2
+    },
+    "server": {
+        "port": 5002,
+        "bodyParser": {
+            "limit": "5000kb"
+        }
+    },
+    "mongodb": {
+        "host": "ds149207.mlab.com:49207",
+        "buckets": {
+            "db":  "googleimages"
+        },
+        "collections":["default"],
+        "username":"vivekthumar",
+        "password":"password_9876"
+    }
+}

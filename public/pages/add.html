@@ -1,0 +1,56 @@
+<style type="text/css">
+/*.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.btn-outlined:hover,
+.btn-outlined:active {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}*/
+
+.audcolor {
+    width: 300px;
+}
+
+label {
+    font-weight: bold !important;
+    text-transform: capitalize;
+}
+
+table th {
+    text-transform: capitalize;
+}
+</style>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 outerdivext">
+        <div class="progress-indicator">
+                <img src="img/2.gif" alt="Loading data..">
+            </div>
+    <div>
+            <toaster-container></toaster-container>
+        <br/>
+        <div class="col-lg-8">
+            <form>
+                <div class="form-group">
+                    <label for="name">Patients name:</label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter name" ng-model='form.name'>
+                </div>
+                <div class="form-group">
+                    <label for="age">Patients email:</label>
+                    <input type="text" class="form-control" id="age" placeholder="Enter email" ng-model='form.email'>
+                </div>
+                <button type="button" class="btn btn-default" ng-click="btnsubmit()">Submit</button>
+                <button type="button" class="btn btn-danger" >Cancle</button>
+                <br/>
+                <br/>
+                <div style="min-height: 30px;background: #00ffff;text-align: center;" ng-if="form.isShow" id="errorMsg"> 
+                    <span style="color:red">{{form.msg}}</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

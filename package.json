@@ -1,0 +1,22 @@
+{
+  "name": "RestApi",
+  "version": "1.0.0",
+  "description": "RestApi",
+  "main": "server.js",
+  "author": {
+    "name": "vivek",
+    "email": "vivekthumar@gmail.com"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "connect-mongo": "^1.3.2",
+    "convict": "^0.8.2",
+    "express": "^4.15.2",
+    "jsonschema": "^1.0.2",
+    "moment": "^2.10.3",
+    "morgan": "^1.6.1",
+    "node-uuid": "^1.4.3",
+    "q": "^1.4.1",
+    "winston": "^1.1.2"
+  }
+}
