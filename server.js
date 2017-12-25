@@ -16,6 +16,7 @@ routes(app);
 var port = process.env.PORT || config.get('server.port')
 app.set('port', port);
 http.createServer(app).listen(app.get('port'), function () {
+	console.log('API server started with ' + port);
     logger.info(util.format('API server started with process :%s and Running on :%s port', process.pid, app.get('port')));
     logger.info(util.format('Environment:%s', config.get('env')));
 });
